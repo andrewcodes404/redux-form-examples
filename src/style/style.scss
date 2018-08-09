@@ -1,0 +1,105 @@
+@import "partials/0_reset";
+@import "partials/1_mixins";
+@import "partials/2_settings";
+
+///////////////////////////////////
+///****   some globals   ****///
+///////////////////////////////////
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+///images
+img {
+  width: 100%;
+  vertical-align: bottom; //stops that annoying 2px gap at the btm of imgs
+  height: auto;
+}
+.img-cont {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+////////////////////////////////////////////////////////////////////////////
+///****   typography     typography     typography     typography   ****///
+///////////////////////////////////////////////////////////////////////////
+
+/// sets the html global font size when your font-size is in REMS then it will change accordingly
+html {
+  font-size: 16px;
+  // @media (min-width: $media-sml) {font-size:16px}
+  @media (min-width: $media-med) {
+    font-size: 20px;
+  }
+  // @media (min-width: $media-lrg) {font-size:18px}
+  // @media (min-width: $media-lrg-xl) {font-size:19px}
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+//specific fo h tags
+@include h-tags {
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  @include fontSize(44px);
+}
+h2 {
+  @include fontSize(34px);
+}
+h3 {
+  @include fontSize(26px);
+}
+h4 {
+  @include fontSize(20px);
+}
+h5 {
+  @include fontSize(18px);
+}
+
+p {
+  @include fontSize(16px);
+  line-height: 1.4;
+  // margin-bottom: 1rem;
+}
+
+small {
+  @include fontSize(14px);
+}
+////****href ****/////
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: orange;
+  }
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+}
+
+// REACT STYLE ---- REACT STYLE ---- REACT STYLE ----
+
+form{
+  margin: 3rem;
+}
+
+.field-cont {
+  margin: 0 0 .25rem 0;
+  // @include b1();
+}
