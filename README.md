@@ -18,12 +18,14 @@ REACT_APP_STORAGE_BUCKET= ###-###
 REACT_APP_MESSY_ID= ###-###  
 
 
-My Notes on Redux-form
-👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  
 
-The tutorial: <https://www.youtube.com/watch?v=ey7H8h4ERHg>
+
+erikras talking: <https://www.youtube.com/watch?v=ey7H8h4ERHg>
 
 The project files: <https://github.com/erikras/reactalicante2017/tree/master/components>
+
+My Notes on Redux-form
+👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  👇  
 
 React Unidirectional Data Flow
 ==============================
@@ -189,9 +191,6 @@ export default ContactForm
 This is the easiest way to get a redux-field form on the page. you can use any standard input type in the component attribute and it will know what to do
 
 The field will recieve a bunch of meta data that we will want to use so in a real case scenario you will never want to use use *component= “input”*
-
-*
-*
 
 ```jsx
   <form onSubmit={handleSubmit}>
