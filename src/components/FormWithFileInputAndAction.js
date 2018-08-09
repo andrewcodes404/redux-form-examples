@@ -20,8 +20,9 @@ const renderFileInput = ({ input, type, meta: { touched, error } }) => {
     )
 }
 
-class FormWithFileInputAndAction extends React.Component {
 
+
+class FormWithFileInputAndAction extends React.Component {
 
     ////PREVIEW IMAGE Fn
     // https://codepen.io/hartzis/pen/VvNGZP?editors=1010
@@ -55,24 +56,21 @@ class FormWithFileInputAndAction extends React.Component {
     }
 
     render() {
-
         // /IMAGE PREVIEW RENDER
         let { imagePreviewUrl } = this.state;
         let $imagePreview = null;
         if (imagePreviewUrl) {
             $imagePreview = (<img src={imagePreviewUrl} alt="la la la "/>);
         } 
-        // else {
-        //     $imagePreview = (<div className="previewText">Please select an Image for Preview</div>);
-        // }
-
-
+     
         const { handleSubmit } = this.props
         return (
 
             <form onSubmit={handleSubmit(this.submit)}>
-                <h3>file input</h3>
+             
+             
                 <div className="field-cont">
+                <label htmlFor="title">title</label>
                     <Field name="title" component="input" type="text"/>
                 </div>
 
