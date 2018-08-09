@@ -491,3 +491,6 @@ form {
 
 .field-cont {
   margin: 0 0 .25rem 0; }
+
+.imgPreview {
+  width: 300px; }

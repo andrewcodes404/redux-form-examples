@@ -5,6 +5,7 @@ import { Field, reduxForm } from 'redux-form'
 
 class BasicFormComp extends React.Component {
     submit = (values) => {
+        console.log("values : ", values);
         uploadDataAC(values, () => {
             console.log("this is the callback from uploadDataAC()");
         })

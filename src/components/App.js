@@ -4,9 +4,10 @@ import React from 'react';
 // import FormWithRenderInput from "./FormWithRenderInput";
 // import FormWithRenderValidation from "./FormWithRenderValidation";
 // import FormCheckbox from "./FormCheckbox";
-import FormWithRadio from "./FormWithRadio";
-import FormWithSelectDrop from "./FormWithSelectDrop";
-
+// import FormWithRadio from "./FormWithRadio";
+// import FormWithSelectDrop from "./FormWithSelectDrop";
+// import FormWithFileInput from "./FormWithFileInput";
+import FormWithFileInputAndAction from "./FormWithFileInputAndAction";
 
 
 // import Test from "./Test";
@@ -20,14 +21,19 @@ const App = () => (
         {/* <BasicFormFSC /> */}
         {/* <BasicFormComp /> */}
         
+
         {/* all input types here 👇 */}
         {/* <FormWithRenderInput /> */}
-
         {/* <FormWithRenderValidation /> */}
         
+
         {/* <FormCheckbox/> */}
-        <FormWithRadio />
-        <FormWithSelectDrop />
+        {/* <FormWithRadio /> */}
+        {/* <FormWithSelectDrop /> */}
+
+        
+        {/* <FormWithFileInput/> */}
+        <FormWithFileInputAndAction/>
 
         {/* <Test /> */}
 
