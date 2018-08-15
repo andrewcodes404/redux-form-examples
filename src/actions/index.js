@@ -57,6 +57,4 @@ export function uploadFileAC(values, callback){
         .catch(function (error) {
             console.log(error);
         });
-
-    
 }

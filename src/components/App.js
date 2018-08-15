@@ -7,41 +7,40 @@ import React from 'react';
 // import FormWithRadio from "./FormWithRadio";
 // import FormWithSelectDrop from "./FormWithSelectDrop";
 // import FormWithFileInput from "./FormWithFileInput";
-import FormWithFileInputAndAction from "./FormWithFileInputAndAction";
+// import FormWithFileInputAndAction from "./FormWithFileInputAndAction";
+import FormWithTinyMCE from "./FormWithTinyMCE";
+
 
 
 // import Test from "./Test";
-
-
-
 
 // 👇 functional stateless comp
 const App = () => (
     <div>
         {/* <BasicFormFSC /> */}
         {/* <BasicFormComp /> */}
-        
+
 
         {/* all input types here 👇 */}
         {/* <FormWithRenderInput /> */}
         {/* <FormWithRenderValidation /> */}
-        
+
 
         {/* <FormCheckbox/> */}
         {/* <FormWithRadio /> */}
         {/* <FormWithSelectDrop /> */}
 
-        
+
         {/* <FormWithFileInput/> */}
-        <FormWithFileInputAndAction/>
-
-        {/* <Test /> */}
-
+        {/* <FormWithFileInputAndAction/> */}
+        <FormWithTinyMCE />
 
 
 
 
-        
+
+
+
     </div>
 );
 

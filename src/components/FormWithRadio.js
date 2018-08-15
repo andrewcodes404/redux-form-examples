@@ -30,6 +30,7 @@ class FormWithRenderInput extends React.Component {
 
         return (
             <form onSubmit={handleSubmit(this.submit)}>
+                <h4>FormWithRadio.js</h4>
                 {radioOptions.map(e => (
                     <div key={e} className="field-cont">
                         <label htmlFor={e}>{e}</label>

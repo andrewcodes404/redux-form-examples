@@ -59,6 +59,7 @@ class Test extends React.Component {
         const { handleSubmit } = this.props
         return (
             <form onSubmit={handleSubmit(this.submit)}>
+                <h4>FormCheckbox.js</h4>
                 <Field name="color" component={MultiCheckBox} />
                 <button type="submit">Submit</button>
             </form>

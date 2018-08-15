@@ -57,6 +57,7 @@ h3 {
 }
 h4 {
   @include fontSize(20px);
+  margin-bottom: 1rem;
 }
 h5 {
   @include fontSize(18px);
@@ -94,6 +95,10 @@ a:active {
 }
 
 // REACT STYLE ---- REACT STYLE ---- REACT STYLE ----
+button{
+  cursor: pointer;
+}
+
 
 form{
   margin: 3rem;

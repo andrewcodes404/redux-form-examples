@@ -50,7 +50,7 @@ class FormWithFileInputAndAction extends React.Component {
         console.log("values : ", values);
         uploadFileAC(values, () => {
             console.log("this is the callback from uploadFileAC()");
-            
+
         })
         this.props.reset()
     }
@@ -60,22 +60,21 @@ class FormWithFileInputAndAction extends React.Component {
         let { imagePreviewUrl } = this.state;
         let $imagePreview = null;
         if (imagePreviewUrl) {
-            $imagePreview = (<img src={imagePreviewUrl} alt="la la la "/>);
-        } 
-     
+            $imagePreview = (<img src={imagePreviewUrl} alt="la la la " />);
+        }
+
         const { handleSubmit } = this.props
         return (
 
             <form onSubmit={handleSubmit(this.submit)}>
-             
-             
-                <div className="field-cont">
-                <label htmlFor="title">title</label>
-                    <Field name="title" component="input" type="text"/>
-                </div>
+                <h4>FormWithFileInputAndAction.js</h4>
 
                 <div className="field-cont">
-                    <label htmlFor="image">Upload Image</label>
+                    <label htmlFor="title">title</label>
+                    <Field name="title" component="input" type="text" />
+                </div>
+                <br />
+                <div className="field-cont">
                     <Field
                         // Specify field name
                         name="image"
@@ -91,7 +90,7 @@ class FormWithFileInputAndAction extends React.Component {
                     {$imagePreview}
                 </div>
 
-                
+                <br />
                 <button type="submit">Submit</button>
             </form>
 
@@ -116,6 +115,3 @@ FormWithFileInputAndAction = reduxForm({
 })(FormWithFileInputAndAction)
 
 export default connect(null, { uploadFileAC })(FormWithFileInputAndAction)
-
-
-

@@ -6,6 +6,8 @@ import { Field, reduxForm } from 'redux-form'
 const renderInput = field =>   // Define stateless component to render input and errors
     <div>
         <input {...field.input} type={field.type} placeholder={field.placeholder}/>
+        
+        
         {field.meta.touched &&
             field.meta.error &&
             <span className="error">{field.meta.error}</span>}
@@ -31,11 +33,11 @@ class FormWithRenderInput extends React.Component {
 
 
         // Here i have mapped through the array of all the different input types
-        //You csan see its as easy as change the label, name and type AND you can still use the same render👏 🎉
+        //You csan see it's as easy as change the label, name and type AND you can still use the same render👏 🎉
 
         return (
             <form onSubmit={handleSubmit(this.submit)}>    
-
+                <h4>FormWithRenderInput.js</h4>
                 {alTypes.map(e=>(
                     <div key={e} className="field-cont">
                         {/* <label htmlFor={e}>{e}</label> */}

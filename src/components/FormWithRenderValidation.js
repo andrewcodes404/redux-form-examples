@@ -36,7 +36,7 @@ class FormWithRenderInput extends React.Component {
 
         return (
             <form onSubmit={handleSubmit(this.submit)}>
-
+                <h4>FormWithRenderValidation.js</h4>
                 {allTypes.map(e => (
                     <div key={e} className="field-cont">
                         <label htmlFor={e}>{e}</label>

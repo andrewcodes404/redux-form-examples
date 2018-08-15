@@ -37,6 +37,7 @@ class FormWithSelectDrop extends React.Component {
         const { handleSubmit } = this.props
         return (
             <form onSubmit={handleSubmit(this.submit)}>
+                <h4>FormWithSelectDrop.js</h4>
                 <div className="field-cont">
                     {/* <label htmlFor={e}>{e}</label> */}
                     <Field
