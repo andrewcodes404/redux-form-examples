@@ -13,14 +13,17 @@ import TinyMCE from 'react-tinymce';
 /// YOU WILL NEED THIS CDN IN THE index.html ///
 //  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
+// https://github.com/instructure-react/react-tinymce/issues/22
+// https://github.com/instructure-react/react-tinymce
+
 const renderTinyMCE = (field) => {
-    console.log("field.input.content : ", field.input.content);
     // delete props.input;
     // delete props.meta;
     return <TinyMCE
         {...field.props}
-        value={field.input.content !== '' ? field.input.content : null}
         onBlur={(event, value) => { field.input.onChange(event.target.getContent()) }}
+
+        value={field.input.content !== '' ? field.input.content : null}
         config={field.config} 
     />
 }
@@ -42,10 +45,14 @@ class FormWithTinyMCE extends React.Component {
     submit = (values) => {
         console.log("this.props : ", this.props);
         console.log("values : ", values);
+      
         uploadDataAC(values, () => {
             console.log("this is the callback from uploadDataAC()");
+            ///think i found a way to reset the tinyMCE
+            const { tinymce } = window
+            tinymce.activeEditor.setContent('')
         })
-        this.props.reset();
+        // this.props.reset();
     }
 
     render() {

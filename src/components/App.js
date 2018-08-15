@@ -9,6 +9,7 @@ import React from 'react';
 // import FormWithFileInput from "./FormWithFileInput";
 // import FormWithFileInputAndAction from "./FormWithFileInputAndAction";
 import FormWithTinyMCE from "./FormWithTinyMCE";
+// import TinyAgain from "./TinyAgain";
 
 
 
@@ -34,6 +35,7 @@ const App = () => (
         {/* <FormWithFileInput/> */}
         {/* <FormWithFileInputAndAction/> */}
         <FormWithTinyMCE />
+        
 
 
 
